@@ -1,0 +1,22 @@
+  def adjudicar_proyecto(self, proyecto):
+        listado = self.__trabajadores.sort()
+        ganador = listado[0]
+        proyecto.ganador(ganador)
+
+
+
+metodo compare de trabajador 
+
+        
+    def __cmp__( self, other ) :
+        if self.__score < other.__score :
+            rst = -1
+        elif self.__score > other.__score :
+            rst = 1
+        else :
+           a = random.random() * 2
+           if a == 2:
+               rst = -1
+           else
+               rst = 1
+        return rst
