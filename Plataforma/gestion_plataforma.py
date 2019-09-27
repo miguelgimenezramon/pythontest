@@ -54,6 +54,8 @@ class Plataforma:
                 proyecto_destino.anadir_candidato(candidato)
     
     def adjudicar_proyecto(self, proyecto):
+		""" Adjudica el proyecto a un unico trabajador,
+		comparando la nota media de los mismos"""
         if proyecto.candidatos != None and len(proyecto.candidatos) > 0:
             listado = proyecto.candidatos.sort()
             ganador = listado[0]
